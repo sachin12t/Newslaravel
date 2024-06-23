@@ -1,0 +1,154 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+   
+}
+.top-logo{
+    display: flex;
+    justify-content: center;
+   padding: 1.3rem;
+    background-color: antiquewhite;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.1rem 6rem;
+    background-color: azure;
+
+}
+.dropdown{
+    z-index: 999;
+}
+.header-toggele{
+    height: 400px;
+    width: 400px;
+    background-color: #000;
+    position: absolute;
+   
+}
+@media screen and (max-width:764px) {
+    nav{
+        display:none;
+    }
+    header .bar-img{
+        display: none;
+    }
+    .carousel-item img{
+        height: 300px;
+    }
+}
+
+header .bar-img{
+    display: none;
+}
+
+
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    margin-left: 1.2rem;
+    transition: .5s;
+}
+header ul li:hover{
+  transform: translateY(-2px);
+
+}
+header ul li a{
+   text-decoration: none;
+   color: #000;
+}
+header ul li a:hover{
+    color: red;
+ }
+ /*search bar start*/
+ .search{
+    text-align: center;
+    padding: 2rem;
+    position:relative;
+ }
+ .search input{
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+ }
+ .search-btn{
+    position: absolute;
+    right: 5%;
+    bottom: 27%;
+    padding: 1rem;
+    border: none;
+   
+ }
+ /* categeory style */
+ .categeory-card{
+    min-height: 250px;   
+ }
+ .categeory-img{
+    height: 200px;
+    width: 100%;
+ }
+ .categeory-img img{
+    height: 100%;
+    width: 100%;
+ }
+ /* blog style */
+
+ .blog-card{
+    min-height: 400px;
+  
+ }
+ .blog-card .button{
+    padding: 1rem 0;
+ }
+
+ .blog-img{
+    height: 150px;
+    width: 100%;
+  
+ }
+ .blog-img img{
+    height: 100%;
+    width: 100%;
+ }
+ .blog-title{
+    color: cornflowerblue;
+    font-style: oblique;
+    padding: 2rem 0;
+    font-size: 1.2rem;
+ }
+ .blog-para{
+    height: 80px;
+    overflow: hidden;
+ }
+
+ /* view blog css */
+.view-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+ .view-image{
+    height: 400px;
+    width: 40%;
+    border:1px solid #000 ;
+ }
+ .view-image img{
+    height: 100%;
+    width: 100%;
+ }
+.view-containt{
+    min-height: 600px;
+    width: 80%;
+    padding: 2rem;
+    text-align: start;
+}
